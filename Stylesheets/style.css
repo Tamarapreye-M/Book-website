@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	color: white;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+		url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YZ4yx0POa6s6yQa7/Group%204291.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 2rem;
+	padding: 1rem 15rem 1rem 1rem;
+	height: 8%;
+	background-color: white;
+}
+li {
+	list-style: none;
+}
+ a {
+	text-decoration: none;
+	color: black;
+}
+#second-ul {
+	display: flex;
+	gap: 1rem;
+}
+header h4 {
+	text-align: center;
+	margin-top: 2rem;
+}
+.head-textBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 70%;
+}
+.head-textBox h1 {
+	width: 40%;
+	text-align: center;
+	font-size: 4rem;
+	margin: 2rem 0rem;
+}
+main section {
+	width: 80%;
+	display: flex;
+	margin: 10% auto;
+	gap: 2rem;
+}
+.icon-div {
+	width: 80%;
+	margin: 3% auto;
+    font-size: 1.1rem;
+    color: grey;
+}
+.icon-div a{
+    text-decoration: none;
+    color: rgb(87, 86, 86);
+}
+.svg-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    gap: 5rem;
+}
+.icon-div svg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+    margin-bottom: 0.5rem;
+}
+.icon-div a:hover {
+	color: blue;
+}
+.all-div {
+	color: black;
+	border-radius: 10px;
+	flex-basis: 35%;
+	cursor: pointer;
+}
+#container {
+	display: inline-block;
+	border: none;
+	overflow: hidden; /* clip the excess when child gets bigger than parent */
+}
+#container img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: transform 0.2s; /* smoother zoom */
+}
+.all-div:hover img {
+	transform: scale(1.1);
+	transform-origin: 50% 50%;
+}
+.all-div:hover a {
+	color: rgb(62, 62, 250);
+}
+.all-div a {
+	font-size: 1.3rem;
+}
+.all-div h3 {
+	font-size: 2.3rem;
+}
+.all-div button {
+	padding: 0.5rem 3rem;
+	font-size: 1rem;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+.all-div button:hover {
+	background-color: rgb(217, 220, 221);
+}
+footer {
+	background-color: rgb(56, 2, 2);
+	color: white;
+	padding: 5rem 3rem 1rem 7rem;
+	display: flex;
+	justify-content: space-between;
+	/* height: 40vh; */
+}
+footer section {
+	width: 50%;
+}
+footer #second {
+	display: flex;
+	gap: 7rem;
+}
+footer h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+footer p {
+	font-size: 1.2rem;
+}
+/* #second #first-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+} */
+#follow {
+	margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    
+} 
+.icons {
+	display: flex;
+	justify-content: left;
+	gap: 3rem;
+}
+i {
+	font-size: 1.3rem;
+}
+@media screen and (max-width: 700px) {
+    main section, footer, footer #second   {
+      flex-direction: column;
+    }
+    footer, footer #second, .svg-icon {
+        gap: 1rem;
+    }
+    .head-textBox h1{
+        font-size: 2rem;
+    }
+  }
